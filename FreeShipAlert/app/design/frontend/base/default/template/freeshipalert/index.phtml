@@ -1,0 +1,15 @@
+<?php $amount_for_free_shipping=$this->getAmountForFreeShipping()?>
+<?php if($this->hasFreeShipping()):?>
+<div class="free-ship-message">
+    <span class="row-1"><?php echo $this->__('CONGRATULAZIONI!');?> </span>
+    <span class="row-2"><?php echo $this->__('hai superato i 60 &euro; di acquisti, per te');?> </span>
+    <span class="row-3"><?php echo $this->__('spese spedizione gratis!');?> </span>
+
+</div>
+<?php else: ?>
+    <div class="no-free-ship-message">
+        <span class="row-1"><?php echo $this->__('CE L\'HAI QUASI FATTA!');?> </span>
+        <span class="row-2"><?php echo $this->__('Ti mancano solo %s &euro; per usufruire della',$amount_for_free_shipping);?> </span>
+        <span class="row-3"><?php echo $this->__('SPEDIZIONE GRATIS SOPRA I 60 &euro;!');?> </span>
+    </div>
+<?php endif;?>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<config>
+	  <tabs>
+		<bcare translate="label" module="freeshipalert">
+            <label>Bcare</label>
+            <sort_order>500</sort_order>
+        </bcare>
+	  </tabs>
+	  <sections>
+		<free_ship_alert  translate="label" module="freeshipalert">                    
+		<label>Free Ship alert</label>
+		<tab>bcare</tab>
+		<frontend_type>text</frontend_type>
+		<sort_order>100</sort_order>
+		<show_in_default>1</show_in_default>
+		<show_in_website>1</show_in_website>
+		<show_in_store>1</show_in_store>            
+					<groups>
+				      <configurazioni translate="label"> 
+					  <label>Configurazioni</label>
+					  <frontend_type>text</frontend_type>
+					  <sort_order>100</sort_order>
+					  <show_in_default>1</show_in_default>
+					  <show_in_website>1</show_in_website>
+					  <show_in_store>1</show_in_store>
+				       <fields>
+                          <importo translate="label">
+                            <label>Importo</label>
+							<frontend_type>text</frontend_type>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>importo minimo per le spese gratuite</comment>
+                          </importo>
+					   </fields>
+					   </configurazioni>
+					</groups>
+		</free_ship_alert>
+	  </sections>
+</config>
