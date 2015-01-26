@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<config>
+	  <tabs>
+		<magedevel translate="label" module="ecommercetrack">
+            <label>Magedevel</label>
+            <sort_order>100</sort_order>
+        </magedevel>
+	  </tabs>
+	  <sections>
+		<ecommercetrack  translate="label" module="ecommercetrack">                    
+		<label>Ecommierce Track</label>
+		<tab>magedevel</tab>
+		<frontend_type>text</frontend_type>
+		<sort_order>200</sort_order>
+		<show_in_default>1</show_in_default>
+		<show_in_website>1</show_in_website>
+		<show_in_store>1</show_in_store>            
+					<groups>
+				      <configuration translate="label"> 
+					  <label>Configurazioni</label>
+					  <frontend_type>text</frontend_type>
+					  <sort_order>300</sort_order>
+					  <show_in_default>1</show_in_default>
+					  <show_in_website>1</show_in_website>
+					  <show_in_store>1</show_in_store>
+				       <fields>
+                          <accountid translate="label">
+                            <label>Account id </label>
+							<frontend_type>text</frontend_type>
+                            <sort_order>200</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>Inserire l'account id (UA-XXXXX-X)</comment>
+                          </accountid>
+					   </fields>
+					   </configuration>
+					</groups>
+		</ecommercetrack>
+	  </sections>
+</config>
