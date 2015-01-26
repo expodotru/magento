@@ -7,6 +7,12 @@
     <reference name="content">   
       <block type="ecommercetrack/index" name="ecommercetrack_index" template="ecommercetrack/index.phtml"/>   
     </reference>   
-  </ecommercetrack_index_index>   
+  </ecommercetrack_index_index>
+
+  <checkout_onepage_success >
+    <reference name="content">
+        <block type="ecommercetrack/track" name="ecommercetrack" template="ecommercetrack/track.phtml"/>
+    </reference>
+      </checkout_onepage_success>
 </layout>   
 	
