@@ -4,4 +4,6 @@ Questo ramo raccoglie i progetti pubblici sviluppati da Magedevel.com per la pia
 Freeship Alert
 ======
 FreeShip Alert permette di impostare un alert nel carrello per informare l'utente che al raggiungimento di un determinato importo avrà le spese gratuite. 
-
+Ecommerce Track
+======
+E' un modulo che implementa il tracking Analytics sulla pagina di success
