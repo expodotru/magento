@@ -19,4 +19,5 @@ class Magedevel_EcommerceTrack_IndexController extends Mage_Core_Controller_Fron
       $this->renderLayout(); 
 	  
     }
+
 }

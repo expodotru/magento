@@ -7,18 +7,21 @@ class Magedevel_EcommerceTrack_Block_Track extends Mage_Core_Block_Template{
         }
         return $this->_order;
     }
-
+    public function doTest(){
+        return "test";
+    }
     public function getShippingAddress(){
         if(!$this->_order){
             $this->_orderInit();
         }
-        $this->_order->getShippingAddress();
+
+        return $this->_order->getShippingAddress();
     }
     private function _orderInit(){
         $order_id=Mage::getSingleton('checkout/session')->getLastOrderId();
-        $order=Mage::getModel('sales/order')->load($order_id);
+        $this->_order=Mage::getModel('sales/order')->load($order_id);
         // this is for loading the order items name
-        foreach($order->getAllItems() as $items) {
+        foreach($this->_order->getAllItems() as $items) {
             $items->getName();
         }
     }
